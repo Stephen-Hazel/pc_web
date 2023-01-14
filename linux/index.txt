@@ -1,12 +1,12 @@
 I'll be talkin bout
 
-- installing it
+ - installing it
 
-- finding some good apps
+ - finding some good apps
 
-- setting up a dev env (if you code)
+ - setting up a dev env (if you code)
 
-- distributing on linux (also if you code)
+ - distributing on linux (also if you code)
 
 I've been on a lotta ancient PCs and windows.
 

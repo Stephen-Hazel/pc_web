@@ -6,31 +6,27 @@ So far the only way I know how to do this is limit you to KUbuntu and RasPi
 And give ya a .deb file (and hope for the best).
 
 Ya download one o these:
-
-<a href="pcheetah_20230114_amd64.deb">pianocheetah for kubuntu</a>
+<a href="pcheetah_20230114_amd64.deb">
+ <img src="img/download.gif">PianoCheetah for kubuntu</a>
 (pianocheetah for raspi will happen pretty soon too)
 
 And ya cd to whereever it went (probably your downloads folder) and go:
 
-install:<br>
- &nbsp; sudo dpkg -i pcheetah_whatev.deb
+ - install: &nbsp; sudo dpkg -i pcheetah_whatev.deb
 
-remove:<br>
- &nbsp; sudo dpkg -P pcheetah
+ - remove: &nbsp; sudo dpkg -P pcheetah
 
 Hey!  Don't be a stranger - if you got questions I'm here ta answer em.
 
 
 <h3>old windows stuff</h3>
-
 Here are some old windows SETUP.exes I still have.
-<a href="SETUP_PIANOCHEETAH.exe">SETUP_PIANOCHEETAH.exe</a>
-<a href="SETUPSHAZWARE.exe">SETUPSHAZWARE.exe</a>
-
-You're on your own with these - I am dooone with windows.
+<a href="SETUP_PIANOCHEETAH.exe">
+ <img src="img/download.gif">SETUP_PIANOCHEETAH.exe</a>
+You're on your own cuz I am dooone with windows.
 I've fixed a lotta bugs on Linux.  They're all still there on Windows :)
 
-<h3>shazware</h3>
 
+<h3>shazware</h3>
 I've also got some codin' utilities that other developers/nerds may like:
 
