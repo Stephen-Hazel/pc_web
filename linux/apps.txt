@@ -1,14 +1,16 @@
 Here's a list of the apps I like:
 
-- kde's kdenlive for video editings
-
-- SimpleScreen Recorder for screen video capture
-
 - notepadpp for editing big wide text files that NEd can't handle
 
 - kde's dolphin for my file explorer
 
 - chrome
+
+- kolourpaint is a solid pain program
+
+- kde's kdenlive for video editings
+
+- SimpleScreen Recorder for screen video capture
 
 - filezilla for sftp
 

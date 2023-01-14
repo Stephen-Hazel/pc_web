@@ -3,11 +3,19 @@
  xmlns:xsi='https://www.w3.org/2001/XMLSchema-instance'
  xsi:schemaLocation='https://www.sitemaps.org/schemas/sitemap/0.9 https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd'>
  <url><loc>https://pianocheetah.app/</loc><changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
- <url><loc>https://pianocheetah.app/misc/eula.html</loc>
+ <url><loc>https://pianocheetah.app/download/index.html</loc>
   <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
- <url><loc>https://pianocheetah.app/misc/privacy.html</loc>
+ <url><loc>https://pianocheetah.app/linux/index.html</loc>
   <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
- <url><loc>https://pianocheetah.app/misc/uninstall.html</loc>
+ <url><loc>https://pianocheetah.app/linux/install.html</loc>
+  <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
+ <url><loc>https://pianocheetah.app/linux/install_kubuntu.html</loc>
+  <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
+ <url><loc>https://pianocheetah.app/linux/install_raspi.html</loc>
+  <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
+ <url><loc>https://pianocheetah.app/linux/apps.html</loc>
+  <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
+ <url><loc>https://pianocheetah.app/linux/coding.html</loc>
   <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
  <url><loc>https://pianocheetah.app/midi/index.html</loc>
   <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
@@ -27,17 +35,11 @@
   <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
  <url><loc>https://pianocheetah.app/midi/sequencer.html</loc>
   <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
- <url><loc>https://pianocheetah.app/practice/index.html</loc>
+ <url><loc>https://pianocheetah.app/misc/eula.html</loc>
   <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
- <url><loc>https://pianocheetah.app/practice/fingering.html</loc>
+ <url><loc>https://pianocheetah.app/misc/privacy.html</loc>
   <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
- <url><loc>https://pianocheetah.app/practice/routine.html</loc>
-  <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
- <url><loc>https://pianocheetah.app/practice/repertoire.html</loc>
-  <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
- <url><loc>https://pianocheetah.app/practice/chords.html</loc>
-  <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
- <url><loc>https://pianocheetah.app/shazware/index.html</loc>
+ <url><loc>https://pianocheetah.app/misc/uninstall.html</loc>
   <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
  <url><loc>https://pianocheetah.app/piano/index.html</loc>
   <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
@@ -51,20 +53,16 @@
   <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
  <url><loc>https://pianocheetah.app/piano/rig.html</loc>
   <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
+ <url><loc>https://pianocheetah.app/practice/index.html</loc>
+  <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
+ <url><loc>https://pianocheetah.app/practice/fingering.html</loc>
+  <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
+ <url><loc>https://pianocheetah.app/practice/routine.html</loc>
+  <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
+ <url><loc>https://pianocheetah.app/practice/repertoire.html</loc>
+  <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
+ <url><loc>https://pianocheetah.app/practice/chords.html</loc>
+  <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
  <url><loc>https://pianocheetah.app/tutorial/index.html</loc>
-  <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
- <url><loc>https://pianocheetah.app/linux/index.html</loc>
-  <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
- <url><loc>https://pianocheetah.app/linux/install.html</loc>
-  <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
- <url><loc>https://pianocheetah.app/linux/install_kubuntu.html</loc>
-  <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
- <url><loc>https://pianocheetah.app/linux/install_raspi.html</loc>
-  <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
- <url><loc>https://pianocheetah.app/linux/apps.html</loc>
-  <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
- <url><loc>https://pianocheetah.app/linux/coding.html</loc>
-  <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
- <url><loc>https://pianocheetah.app/download/index.html</loc>
   <changefreq>daily</changefreq><lastmod>2023-01-14</lastmod></url>
 </urlset>

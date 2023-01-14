@@ -21,12 +21,6 @@ remove:<br>
 Hey!  Don't be a stranger - if you got questions I'm here ta answer em.
 
 
-<h3>shazware</h3>
-
-I've also got some codin' utilities that other developers/nerds may like:
-<a href="https://github.com/Stephen-Hazel/shazware">shazware for kubuntu and raspi on github</a>
-
-
 <h3>old windows stuff</h3>
 
 Here are some old windows SETUP.exes I still have.
@@ -35,3 +29,8 @@ Here are some old windows SETUP.exes I still have.
 
 You're on your own with these - I am dooone with windows.
 I've fixed a lotta bugs on Linux.  They're all still there on Windows :)
+
+<h3>shazware</h3>
+
+I've also got some codin' utilities that other developers/nerds may like:
+
