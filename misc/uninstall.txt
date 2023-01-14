@@ -1,0 +1,4 @@
+sudo dpkg -P pcheetah
+
+But thank you for trying out PianoCheetah !!
+It'll improve over time, so please try it again some day.

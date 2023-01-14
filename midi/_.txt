@@ -1,0 +1,10 @@
+.midi for newbs
+index intro
+device
+channel
+note
+drum
+control
+sound
+sysex
+sequencer

@@ -1,0 +1,21 @@
+I'll be talkin bout
+
+- installing it
+
+- finding some good apps
+
+- setting up a dev env (if you code)
+
+- distributing on linux (also if you code)
+
+I've been on a lotta ancient PCs and windows.
+
+Windows was great from win98 to 7.
+But it sucked at win8.  
+Like enough to move to linux.
+
+It took me a while, but now I'm happy on kubuntu and raspi.
+
+Linux ain't yet ready for your gramma.  But it's ready for you.
+
+Ok.  Let's install a linux.

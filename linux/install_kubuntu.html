@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+ <meta name="robots"      content="follow, all">
+ <meta name="keywords"    content="PianoCheetah, software, piano practice,">
+ <meta name="description" content=
+       "PianoCheetah - Add fun to your piano practice">
+
+ <title>PianoCheetah - bout linux - install_kubuntu</title>
+
+ <link href="https://PianoCheetah.app/favicon.ico" rel="Shortcut Icon" />
+ <link href="../css/mytheme.css"                   rel="stylesheet" />
+ <link href="../css/jquery.mobile.icons.css"       rel="stylesheet" />
+ <link href="../css/jquery.mobile.structure.css"   rel="stylesheet" />
+ <link href="../css/style.css"                     rel="stylesheet" />
+ <script src="../js/jquery.js"           ></script>
+ <script src="../js/jquery.mobile_fix.js"></script>
+ <script src="../js/jquery.mobile.js"    ></script>
+ <script src="../js/sub.js"              ></script>
+</head>
+<body>
+<div data-role="page">
+ <div role="main" class="ui-content">
+  <div id="hdr">
+   <span id='menux'>
+    <a id="home" title='back home!' href='../index.html'>
+       <img src='../img/home.webp'></a><br>
+    <a id="menubtn"
+       href="#menu" data-rel="popup" class="ui-btn ui-btn-inline">HERE'S THE DANG menu</a>
+   </span>
+   <img id="logosm" src="../img/top_logo.png">
+  </div>
+  <div id="bod">
+   <h1>bout linux - install_kubuntu</h1>
+
+
+<a href='apps.html'>skip to apps install</a><br>
+
+ make usb with imager https://www.balena.io/etcher/
+ hold F2 key to pick boot order of usb 1st, turn off secure boot
+ install - deleting all
+ update all sw
+ connect bluetooth mouse,kbd<br>
+
+ setup KDE:
+   set dark theme,desktop pics
+   disable kwallet
+   disable 30 sec logout thing
+   turn off screenlock timeout<br>
+
+ discover SimpleScreenRecorder, kdenlive, filezilla, 
+   kolourpaint, disk usage analyzer, notepadqq, vscode
+   remove kate<br>
+
+ sudo add-apt-repository ppa:kubuntu-ppa/backports
+ sudo apt full-upgrade<br>
+
+ install chrome (download .deb, open w discover)<br>
+
+ sudo apt install nfs-common  (for synology)   steverinooo<br>
+in /etc/fstab<br>
+192.168.1.14:/volume1/bock /media/sh/bu nfs rsize=8192,wsize=8192,timeo=14,intr<br>
+
+ sudo apt install smbclient cifs-utils<br>
+in /etc/fstab<br>
+//192.168.1.14/bock /media/bu cifs credentials=/home/sh/.smbcredentials,uid=sh,gid=sh 0 0<br>
+in ~/.smbcredentials<br>
+username=...<br>
+password=...<br>
+sudo mount -a to apply<br>
+<br>
+default-sample-rate = 48000<br>
+alternate-sample-rate = 48000<br>
+avoid-resampling = no<br>
+Save as ~/.config/pulse/daemon.conf<br>
+
+ sudo mkdir     /opt/app
+ sudo chown sh  /opt/app
+ sudo chgrp sh  /opt/app
+ ln -s /media/sh/bu _
+ ln -s /opt/app app
+ ln -s /media/pi/BOCK bock
+ vi .profile - add /opt/app:.  to path
+ copy .ssh files from _/z/app/ssh<br>
+
+ -- Qt  <br>
+sudo apt install build-essential git qtcreator qtbase5-dev 
+   qt5-qmake cmake libasound2-dev<br>
+<br>
+--nooo<br>
+-- https://www.qt.io/download-qt-installer;   chmod 700,run it<br>
+--   custom install latest to /opt/app/Qt
+ menu edit/preferences - kits in list on left
+  QtVersions tab 
+   add - /usr/lib/qt5/bin/qmake
+  set c++ to gcc
+  check that cmake, gdb are autodetected
+  pick all those in the kit tab with name of “desktop”
+ tweak Qt text editor, etc<br>
+
+ sudo apt install python3 python3-pip curl
+ pip3 install bs4 requests<br>
+
+ -- php<br>
+sudo apt install php php-cli<br>
+
+ -- rust<br>
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh<br>
+
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+  nvm install 10
+  nvm use 10<br>
+<br>
+cores: 
+ sudo vi /etc/default/apport    enable=0   (save,restart)
+ cd ~/.kde   mkdir env   cd env   vi debug.sh
+   export KDE_DEBUG=1
+   ulimit -c unlimited
+ sudo mkdir     /var/cores   
+ sudo chmod 777 /var/cores
+ sudo vi /etc/sysctl.conf
+   kernel.core_pattern=/var/cores/core.%e.%p<br>
+(save,restart)<br>
+to test:   cat /proc/sys/kernel/core_pattern<br>
+gdb -c <corefile> 
+ backtrace full
+ info registers
+ x/16i $pc
+ thread apply all backtrace
+ quit<br>
+<br>
+qtcreator debugging:
+ export QT_DEBUG_PLUGINS=1
+ ./qtcreator
+    (boom)
+ ldd -v libqxcb.so | grep found<br>
+<br>
+<br>
+
+
+<br><br><br><a id='next' class='ui-btn ui-btn-inline' href='install_raspi.html'>next: &nbsp;install_raspi</a>&nbsp;&nbsp;<a id='home' class='ui-btn ui-btn-inline' href='../index.html'>home</a>
+<br><br>
+
+
+ </div>
+ <div id="menu" data-role="popup">
+  <ul data-role="listview" data-icon="false">
+   <li><a href="../index.html" >...back home</a></li>
+   <li><a href="index.html"    >bout linux</a></li>
+   <li><a href="install.html"  >install</a></li>
+   <li><a href="apps.html"     >apps</a></li>
+   <li><a href="coding.html"   >coding</a></li>
+  </ul>
+ </div>
+
+
+
+</div>
+</body>
+</html>

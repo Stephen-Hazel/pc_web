@@ -1,0 +1,15 @@
+...my apologies!  i'm still workin on code.
+
+But the idea here is you see the notes in a NICE pianoroll format.
+
+That's been modified with all the nice things standard notation has.
+
+You practice a song.  Or just a track and the song syncs to your playing.
+
+Or you play a "super easy to hit" version of the song with way less notes.
+
+BUT however hard you hit the easy note is how the song's "feel" will go.
+
+Your velocities, super easy notes.
+
+Ok.  Let me get back to coding.  I promise to explain it better.  Maybe with videos.

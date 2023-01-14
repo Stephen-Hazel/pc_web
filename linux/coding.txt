@@ -1,0 +1,162 @@
+Before you code, you need to:
+
+- decide between Qt and GTK.  (Qt sucks way less!)
+  
+- Now you can setup your dev environment - qtcreator
+  <a href='install_kubuntu.html'>Here's how i install it</a>
+
+Don't just stick with command line coding.
+If there's one think linux needs it's GUI apps that don't suck.
+
+
+These distribution instructions are for me.  take from them what you will.
+<a href='/'>naw, we're done here - back home please :)</a>
+
+
+This may surprise you, but on linux, the usual way you install an app is
+1) install a replacement OS on top of your distro.
+2) rewrite your app to run on this os instead of the distro os.
+3) bundle it all up and distribute.
+
+
+Why?  Because you can't take an executable on one distro and run it on another.
+Unless the linux you compiled on and the one you hope to run on are very very similar.
+
+Why?  Typically, distros pick a big network of .so files (runtime libraries - called .dll on windows).
+Once they're picked, eeeverything the distro plans to run is compiled using those exact .so versions.
+
+Got an app that didn't come with the distro?  Prepare for a headache.
+Got the source for that app?  And the dev env for the app?
+You can compile and link it with the distro's .so libraries.
+
+Otherwise you're probably out of luck because the distros do not use a common set of .so files.
+This will cause apps compiled on distro1 to be missing needed .so files on distro2.
+
+WHY???  I DON'T KNOW!!!  Seems pretty duuuuuumb to me !
+If all the distros decided on a standard set of .sos, everything would be fine.
+
+My hope is that this happens BEFORE the distros throw up their hands and rewrite their
+OS code on top of those (DUMB!) mini os environments.
+Cuz that will mean we're stuck with them forever.
+
+sources:
+https://www.internalpointers.com/post/build-binary-deb-package-practical-guide
+
+see also:
+https://ludocode.com/blog/flatpak-is-not-the-future
+https://theevilskeleton.gitlab.io/2022/05/16/response-to-flatpak-is-not-the-future.html
+
+
+So what I do is use .deb files for my releases.
+It's what sudo apt uses behind the scenes.
+But you're limited to a distro based on debian
+(like ubuntu, kubuntu, chromeos' included debian, raspi).
+
+Well that'll (hafta) work for me.
+
+
+
+install .deb in chromeos by
+ doubleclicking .deb in Files app
+
+
+<d> below is top dir in name format app_version-revis_arch
+ version is yyyymmdd.
+ revis always 1.
+ arch is amd64 or armhf.
+ (my preferences, of course)
+
+<app> below is the dirname for your app
+ (shazware for my example)
+
+install:   sudo dpkg -i <d>.deb
+           sudo dpkg -i shazware_20220514-1_amd64.deb
+remove:    sudo dpkg -P <dprefix>
+           sudo dpkg -P shazware
+
+
+CREATING A .deb ...
+
+sudo apt install dpkg  (probably already there)
+
+mkdir -p <d>/opt/app/<app>
+mkdir    <d>/DEBIAN
+cp <all exe .png .desktop etc> to
+   <d>/opt/app/<app>/
+cp <all .desktop> to
+   <d>/usr/share/applications
+vi <d>/DEBIAN/control with...
+Package: shazware
+Version: 20220514
+Architecture: amd64  (or armhf for raspi)
+Maintainer: Stephen Hazel<stephen.hazel@gmail.com> https://pianocheetah.app
+Description: shazware - Stephen HAZel’s softWARE
+ and an extra long description starting with space
+ ned - Nifty text EDitor
+ ftx - Find TeXt in files under a directory
+ flatten - flatten all dirs/files under a directory to dirs_files
+ undup - kill off dup files based on contents matching exactly
+Section: custom
+Priority: optional
+Essential: no
+Installed-Size: (size of exe in bytes)
+Sources:
+Depends:
+<dependencies appended here>
+
+Taking care of external dependencies:
+copy <d> to a linux drive that can handle diff case diff file (NTFS won’t)
+cd <d>
+cp -pr DEBIAN debian
+   (you may have to do this on a drive that CAN DO dirs of same name diff case)
+ln -s opt/app/<app> x
+dpkg-shlibdeps -v -O x/<exe1> x/<exe2> ...etc
+copy the last line into your DEBIAN/control file
+rm -fr debian
+rm x
+
+dpkg-deb --build --root-owner-group <d>
+NOW stick that <d>.deb on your website
+(WITH the top couple lines about how TF to install/remove/etc)
+...aaand see who whines
+
+
+
+
+Notes:
+
+test remove:
+ dpkg -l | grep <d>
+ output should be blank if uninstalled correctly.
+
+
+Run scripts before or after package installation and removal
+<d>/DEBIAN/preinst
+   postinst
+   prerm
+   postrm
+are called maintainer scripts.
+must be chmod between 0555 and 0775.
+
+
+When installing, if you see
+ Package is in a very bad inconsistent state - you should reinstall it before attempting a removal.
+Then
+ keep anything you want preserved then
+ sudo mv /var/lib/dpkg/info/<d>.* /tmp/
+ sudo dpkg --remove --force-remove-reinstreq <d>
+
+
+dpkg-gencontrol writes names of package files into "debian/files".
+Parsing it much easier than any dances with resulting files in parent directory
+(i.e. parsing ../*.changes").
+
+
+.desktop files:
+ usually in /usr/share/applications
+ or ~/.local/share/applications
+ else:
+ create an ‘applications’ directory somewhere
+ put your .desktop files
+ add path of it’s parent directory to the XDG_DATA_DIRS environment variable
+

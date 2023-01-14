@@ -1,0 +1,17 @@
+Here's a list of the apps I like:
+
+- kde's kdenlive for video editings
+
+- SimpleScreen Recorder for screen video capture
+
+- notepadpp for editing big wide text files that NEd can't handle
+
+- kde's dolphin for my file explorer
+
+- chrome
+
+- filezilla for sftp
+
+- 'disk usage analyzer' to see what's eatin your disk
+  called baobab if you can't find 'disk usage analyzer'
+  

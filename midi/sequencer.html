@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+ <meta name="robots"      content="follow, all">
+ <meta name="keywords"    content="PianoCheetah, software, piano practice,">
+ <meta name="description" content=
+       "PianoCheetah - Add fun to your piano practice">
+
+ <title>PianoCheetah - midi for newbs - sequencer</title>
+
+ <link href="https://PianoCheetah.app/favicon.ico" rel="Shortcut Icon" />
+ <link href="../css/mytheme.css"                   rel="stylesheet" />
+ <link href="../css/jquery.mobile.icons.css"       rel="stylesheet" />
+ <link href="../css/jquery.mobile.structure.css"   rel="stylesheet" />
+ <link href="../css/style.css"                     rel="stylesheet" />
+ <script src="../js/jquery.js"           ></script>
+ <script src="../js/jquery.mobile_fix.js"></script>
+ <script src="../js/jquery.mobile.js"    ></script>
+ <script src="../js/sub.js"              ></script>
+</head>
+<body>
+<div data-role="page">
+ <div role="main" class="ui-content">
+  <div id="hdr">
+   <span id='menux'>
+    <a id="home" title='back home!' href='../index.html'>
+       <img src='../img/home.webp'></a><br>
+    <a id="menubtn"
+       href="#menu" data-rel="popup" class="ui-btn ui-btn-inline">HERE'S THE DANG menu</a>
+   </span>
+   <img id="logosm" src="../img/top_logo.png">
+  </div>
+  <div id="bod">
+   <h1>midi for newbs - sequencer</h1>
+
+
+MIDI starts getting interesting when you introduce a midi<br>
+<b>sequencer</b>.<br>
+<br>
+it's a computer program that sits in between your keyboard controller and
+ your sound module.  It's usually a program you install on your PC.  But some
+ (lame) ones exist on keyboards.  Lame due to their terrible user interface.<br>
+<br>
+It records all the midi events coming in,
+ Plays em with "backing tracks" of prerecorded midi events.
+ Shows em on the screen in a fancy note/control display.
+ Saves and loads the events to a midi file.<br>
+<br>
+Sitting in the middle there, a sequencer can listen to the midi coming from the
+ keyboard controller and record it into a "track".<br>
+<br>
+A track is similar to a midi channel, but there's no "16 max" limit on tracks.
+ You tell a track to listen to a midi channel (or set of em) and record all
+ the notes and controls it hears.<br>
+<br>
+These are played out together (sequenced) with other already recorded tracks.
+ You can...
+<div class='bul'>display the tracks' notes on screen<br>
+</div>
+<div class='bul'>save em in a .mid file<br>
+   (If you need a .WAV or .MP3, install Audacity and have it capture what
+    your synthesizers are putting out.)<br>
+</div>
+<div class='bul'>load em from a file<br>
+</div>
+<div class='bul'>edit em on screen<br>
+</div>
+<div class='bul'>add auto accompaniment<br>
+</div>
+<div class='bul'>juggle which track has which sound<br>
+</div>
+<div class='bul'>juggle which tracks go to which sound module channels<br>
+</div><br>
+The midi sequencer is what gives the keyboard player the capabilities of a
+ whole orchestra.  Well, you know, not a real one...<br>
+<br>
+<br>
+If you need a way fancier sequencer than PianoCheetah, hit google.
+ But with PianoCheetah, I can help ya.<br>
+<br>
+Okay, that's all I got for ya on midi.<br>
+<br>
+
+
+<a id='home' class='ui-btn ui-btn-inline' href='../index.html'>home</a>
+<br><br>
+
+
+ </div>
+ <div id="menu" data-role="popup">
+  <ul data-role="listview" data-icon="false">
+   <li><a href="../index.html" >...back home</a></li>
+   <li><a href="index.html"    >intro</a></li>
+   <li><a href="device.html"   >device</a></li>
+   <li><a href="channel.html"  >channel</a></li>
+   <li><a href="note.html"     >note</a></li>
+   <li><a href="drum.html"     >drum</a></li>
+   <li><a href="control.html"  >control</a></li>
+   <li><a href="sound.html"    >sound</a></li>
+   <li><a href="sysex.html"    >sysex</a></li>
+   <li><a href="sequencer.html">sequencer</a></li>
+  </ul>
+ </div>
+
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+# htmlfilename [title]
+.piano101
+index which one do I buy?
+specs keyboard specs
+audio audio cable hookup
+midi midi cable hookup
+etc the rig
+rig my rig

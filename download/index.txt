@@ -1,0 +1,33 @@
+Now, you didn't think you could just run a SETUP.exe did ya...
+
+THIS IS LINUX !!
+
+So far the only way I know how to do this is limit you to KUbuntu and RasPi
+And give ya a .deb file (and hope for the best).
+
+Ya download one o these:
+
+<a href="pcheetah_20230114_amd64.deb">pianocheetah for kubuntu</a>
+(pianocheetah for raspi will happen pretty soon too)
+
+And ya cd to whereever it went (probably your downloads folder) and go:
+
+install:<br>
+ &nbsp; sudo dpkg -i pcheetah_whatev.deb
+
+remove:<br>
+ &nbsp; sudo dpkg -P pcheetah
+
+<hr>
+
+I've also got some codin' utilities that other developers/nerds may like:
+<a href="https://github.com/Stephen-Hazel/shazware">shazware for kubuntu and raspi on github</a>
+
+<hr>
+
+Here are some old windows SETUP.exes I still have.
+<a href="SETUP_PIANOCHEETAH.exe">SETUP_PIANOCHEETAH.exe</a>
+<a href="SETUPSHAZWARE.exe">SETUPSHAZWARE.exe</a>
+
+You're on your own with these - I am dooone with windows.
+I've fixed a lotta bugs on Linux.  They're all still there on Windows :)

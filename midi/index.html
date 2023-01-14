@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+ <meta name="robots"      content="follow, all">
+ <meta name="keywords"    content="PianoCheetah, software, piano practice,">
+ <meta name="description" content=
+       "PianoCheetah - Add fun to your piano practice">
+
+ <title>PianoCheetah - midi for newbs - intro</title>
+
+ <link href="https://PianoCheetah.app/favicon.ico" rel="Shortcut Icon" />
+ <link href="../css/mytheme.css"                   rel="stylesheet" />
+ <link href="../css/jquery.mobile.icons.css"       rel="stylesheet" />
+ <link href="../css/jquery.mobile.structure.css"   rel="stylesheet" />
+ <link href="../css/style.css"                     rel="stylesheet" />
+ <script src="../js/jquery.js"           ></script>
+ <script src="../js/jquery.mobile_fix.js"></script>
+ <script src="../js/jquery.mobile.js"    ></script>
+ <script src="../js/sub.js"              ></script>
+</head>
+<body>
+<div data-role="page">
+ <div role="main" class="ui-content">
+  <div id="hdr">
+   <span id='menux'>
+    <a id="home" title='back home!' href='../index.html'>
+       <img src='../img/home.webp'></a><br>
+    <a id="menubtn"
+       href="#menu" data-rel="popup" class="ui-btn ui-btn-inline">HERE'S THE DANG menu</a>
+   </span>
+   <img id="logosm" src="../img/top_logo.png">
+  </div>
+  <div id="bod">
+   <h1>midi for newbs - intro</h1>
+
+
+<h3>And what the heck is MIDI???</h3><br>
+<br>
+It's all the <b>notes</b> and <b>controls</b> that a piano keyboard can send to
+ a sound synthesizer over a wire.<br>
+<br>
+Most digital pianos have both a keyboard and a built in synthesizer.
+ There are also "controller keyboards" that will use a software synthesizer you
+ install on your computer.<br>
+<br>
+Anything you can DO on the keyboard, midi can do too.  (Well, can encode too.)<br>
+<br>
+When you pick a sound, a little teeny message goes across the midi cable.<br>
+When you press a key down, a little teeny message goes across the midi cable.<br>
+When you release a key, well, you get the idea...<br>
+<br>
+<br>
+for notes, midi sends:
+<div class='bul'>which one?  Octave and note.<br>
+</div>
+<div class='bul'>down or up?  So really, there are 2 midi events per note.  One down.  One up.<br>
+</div>
+<div class='bul'>how hard pressed/released?  The "velocity" - a number from 1 to 127.  1=soft.
+   127=loud.<br>
+</div>
+<div class='bul'>which "channel" - a number that ties the note to a particular
+   sound and sound controls.  Similar to a mixer channel.  But for notes.<br>
+</div><br>
+<br>
+for (sound) controls, midi sends:
+<div class='bul'>which one?  (HoldPedal, KeyboardPressure, ModWheel, ProgramChange, etc...)<br>
+</div>
+<div class='bul'>set it to what?  (usually a number from 0 to 127).<br>
+</div>
+<div class='bul'>which "channel" - again, ties this sound control to the notes playing on
+   that channel.<br>
+</div><br>
+<br>
+Think of these little messages as notes being sent <b>from</b> a keyboard
+ <b>to</b> a synthesizer.<br>
+<br>
+They can also be stuffed into a midi file.  These usually have a .MID or .KAR
+ extension.  Things sent over a wire happen in real time.  In a midi file, these
+ events are stamped with the <i>exact</i> time they happen at.<br>
+<br>
+<br>
+Midi cables let you seperate the keyboard controller from the sound module.
+ Kind of like the way audio cables let you have seperate stereo components.
+ So all your keyboards can go to one synthesizer or so one keyboard can
+ go to lots of synthesizers.  Also, computer programs can record and play back
+ the <i>exact</i> same notes.<br>
+<br>
+<br>
+Now, if you're a computer programmer, you'll enjoy
+ <!-- https://home.roadrunner.com/~jgglatt/" -->
+ <a rel="x" href="http://midi.teragonaudio.com/"
+ >Jeff Glatt's site</a>.
+ Or maybe the standard midi site
+ <a rel="x" href="https://www.midi.org">midi.org</a>.<br>
+<br>
+<br>
+We're going to just chat about the useful stuff, though.<br>
+<br>
+
+
+<br><br><br><a id='next' class='ui-btn ui-btn-inline' href='device.html'>next: &nbsp;device</a>&nbsp;&nbsp;<a id='home' class='ui-btn ui-btn-inline' href='../index.html'>home</a>
+<br><br>
+
+
+ </div>
+ <div id="menu" data-role="popup">
+  <ul data-role="listview" data-icon="false">
+   <li><a href="../index.html" >...back home</a></li>
+   <li><a href="index.html"    >intro</a></li>
+   <li><a href="device.html"   >device</a></li>
+   <li><a href="channel.html"  >channel</a></li>
+   <li><a href="note.html"     >note</a></li>
+   <li><a href="drum.html"     >drum</a></li>
+   <li><a href="control.html"  >control</a></li>
+   <li><a href="sound.html"    >sound</a></li>
+   <li><a href="sysex.html"    >sysex</a></li>
+   <li><a href="sequencer.html">sequencer</a></li>
+  </ul>
+ </div>
+
+
+
+</div>
+</body>
+</html>

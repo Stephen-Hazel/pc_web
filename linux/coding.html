@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+ <meta name="robots"      content="follow, all">
+ <meta name="keywords"    content="PianoCheetah, software, piano practice,">
+ <meta name="description" content=
+       "PianoCheetah - Add fun to your piano practice">
+
+ <title>PianoCheetah - bout linux - coding</title>
+
+ <link href="https://PianoCheetah.app/favicon.ico" rel="Shortcut Icon" />
+ <link href="../css/mytheme.css"                   rel="stylesheet" />
+ <link href="../css/jquery.mobile.icons.css"       rel="stylesheet" />
+ <link href="../css/jquery.mobile.structure.css"   rel="stylesheet" />
+ <link href="../css/style.css"                     rel="stylesheet" />
+ <script src="../js/jquery.js"           ></script>
+ <script src="../js/jquery.mobile_fix.js"></script>
+ <script src="../js/jquery.mobile.js"    ></script>
+ <script src="../js/sub.js"              ></script>
+</head>
+<body>
+<div data-role="page">
+ <div role="main" class="ui-content">
+  <div id="hdr">
+   <span id='menux'>
+    <a id="home" title='back home!' href='../index.html'>
+       <img src='../img/home.webp'></a><br>
+    <a id="menubtn"
+       href="#menu" data-rel="popup" class="ui-btn ui-btn-inline">HERE'S THE DANG menu</a>
+   </span>
+   <img id="logosm" src="../img/top_logo.png">
+  </div>
+  <div id="bod">
+   <h1>bout linux - coding</h1>
+
+
+Before you code, you need to:<br>
+<br>
+- decide between Qt and GTK.  (Qt sucks way less!)
+  <br>
+- Now you can setup your dev environment - qtcreator
+  <a href='install_kubuntu.html'>Here's how i install it</a><br>
+<br>
+Don't just stick with command line coding.<br>
+If there's one think linux needs it's GUI apps that don't suck.<br>
+<br>
+<br>
+These distribution instructions are for me.  take from them what you will.<br>
+<a href='/'>naw, we're done here - back home please :)</a><br>
+<br>
+<br>
+This may surprise you, but on linux, the usual way you install an app is<br>
+1) install a replacement OS on top of your distro.<br>
+2) rewrite your app to run on this os instead of the distro os.<br>
+3) bundle it all up and distribute.<br>
+<br>
+<br>
+Why?  Because you can't take an executable on one distro and run it on another.<br>
+Unless the linux you compiled on and the one you hope to run on are very very similar.<br>
+<br>
+Why?  Typically, distros pick a big network of .so files (runtime libraries - called .dll on windows).<br>
+Once they're picked, eeeverything the distro plans to run is compiled using those exact .so versions.<br>
+<br>
+Got an app that didn't come with the distro?  Prepare for a headache.<br>
+Got the source for that app?  And the dev env for the app?<br>
+You can compile and link it with the distro's .so libraries.<br>
+<br>
+Otherwise you're probably out of luck because the distros do not use a common set of .so files.<br>
+This will cause apps compiled on distro1 to be missing needed .so files on distro2.<br>
+<br>
+WHY???  I DON'T KNOW!!!  Seems pretty duuuuuumb to me !<br>
+If all the distros decided on a standard set of .sos, everything would be fine.<br>
+<br>
+My hope is that this happens BEFORE the distros throw up their hands and rewrite their<br>
+OS code on top of those (DUMB!) mini os environments.<br>
+Cuz that will mean we're stuck with them forever.<br>
+<br>
+sources:<br>
+https://www.internalpointers.com/post/build-binary-deb-package-practical-guide<br>
+<br>
+see also:<br>
+https://ludocode.com/blog/flatpak-is-not-the-future<br>
+https://theevilskeleton.gitlab.io/2022/05/16/response-to-flatpak-is-not-the-future.html<br>
+<br>
+<br>
+So what I do is use .deb files for my releases.<br>
+It's what sudo apt uses behind the scenes.<br>
+But you're limited to a distro based on debian<br>
+(like ubuntu, kubuntu, chromeos' included debian, raspi).<br>
+<br>
+Well that'll (hafta) work for me.<br>
+<br>
+<br>
+<br>
+install .deb in chromeos by
+ doubleclicking .deb in Files app<br>
+<br>
+<br>
+<d> below is top dir in name format app_version-revis_arch
+ version is yyyymmdd.
+ revis always 1.
+ arch is amd64 or armhf.
+ (my preferences, of course)<br>
+<br>
+<app> below is the dirname for your app
+ (shazware for my example)<br>
+<br>
+install:   sudo dpkg -i <d>.deb
+           sudo dpkg -i shazware_20220514-1_amd64.deb<br>
+remove:    sudo dpkg -P <dprefix>
+           sudo dpkg -P shazware<br>
+<br>
+<br>
+CREATING A .deb ...<br>
+<br>
+sudo apt install dpkg  (probably already there)<br>
+<br>
+mkdir -p <d>/opt/app/<app><br>
+mkdir    <d>/DEBIAN<br>
+cp <all exe .png .desktop etc> to
+   <d>/opt/app/<app>/<br>
+cp <all .desktop> to
+   <d>/usr/share/applications<br>
+vi <d>/DEBIAN/control with...<br>
+Package: shazware<br>
+Version: 20220514<br>
+Architecture: amd64  (or armhf for raspi)<br>
+Maintainer: Stephen Hazel<stephen.hazel@gmail.com> https://pianocheetah.app<br>
+Description: shazware - Stephen HAZel’s softWARE
+ and an extra long description starting with space
+ ned - Nifty text EDitor
+ ftx - Find TeXt in files under a directory
+ flatten - flatten all dirs/files under a directory to dirs_files
+ undup - kill off dup files based on contents matching exactly<br>
+Section: custom<br>
+Priority: optional<br>
+Essential: no<br>
+Installed-Size: (size of exe in bytes)<br>
+Sources:<br>
+Depends:<br>
+<dependencies appended here><br>
+<br>
+Taking care of external dependencies:<br>
+copy <d> to a linux drive that can handle diff case diff file (NTFS won’t)<br>
+cd <d><br>
+cp -pr DEBIAN debian
+   (you may have to do this on a drive that CAN DO dirs of same name diff case)<br>
+ln -s opt/app/<app> x<br>
+dpkg-shlibdeps -v -O x/<exe1> x/<exe2> ...etc<br>
+copy the last line into your DEBIAN/control file<br>
+rm -fr debian<br>
+rm x<br>
+<br>
+dpkg-deb --build --root-owner-group <d><br>
+NOW stick that <d>.deb on your website<br>
+(WITH the top couple lines about how TF to install/remove/etc)<br>
+...aaand see who whines<br>
+<br>
+<br>
+<br>
+<br>
+Notes:<br>
+<br>
+test remove:
+ dpkg -l | grep <d>
+ output should be blank if uninstalled correctly.<br>
+<br>
+<br>
+Run scripts before or after package installation and removal<br>
+<d>/DEBIAN/preinst
+   postinst
+   prerm
+   postrm<br>
+are called maintainer scripts.<br>
+must be chmod between 0555 and 0775.<br>
+<br>
+<br>
+When installing, if you see
+ Package is in a very bad inconsistent state - you should reinstall it before attempting a removal.<br>
+Then
+ keep anything you want preserved then
+ sudo mv /var/lib/dpkg/info/<d>.* /tmp/
+ sudo dpkg --remove --force-remove-reinstreq <d><br>
+<br>
+<br>
+dpkg-gencontrol writes names of package files into "debian/files".<br>
+Parsing it much easier than any dances with resulting files in parent directory<br>
+(i.e. parsing ../*.changes").<br>
+<br>
+<br>
+.desktop files:
+ usually in /usr/share/applications
+ or ~/.local/share/applications
+ else:
+ create an ‘applications’ directory somewhere
+ put your .desktop files
+ add path of it’s parent directory to the XDG_DATA_DIRS environment variable<br>
+<br>
+<br>
+
+
+<a id='home' class='ui-btn ui-btn-inline' href='../index.html'>home</a>
+<br><br>
+
+
+ </div>
+ <div id="menu" data-role="popup">
+  <ul data-role="listview" data-icon="false">
+   <li><a href="../index.html" >...back home</a></li>
+   <li><a href="index.html"    >bout linux</a></li>
+   <li><a href="install.html"  >install</a></li>
+   <li><a href="apps.html"     >apps</a></li>
+   <li><a href="coding.html"   >coding</a></li>
+  </ul>
+ </div>
+
+
+
+</div>
+</body>
+</html>

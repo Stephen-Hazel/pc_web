@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+ <meta name="robots"      content="follow, all">
+ <meta name="keywords"    content="PianoCheetah, software, piano practice,">
+ <meta name="description" content=
+       "PianoCheetah - Add fun to your piano practice">
+
+ <title>PianoCheetah - midi for newbs - drum</title>
+
+ <link href="https://PianoCheetah.app/favicon.ico" rel="Shortcut Icon" />
+ <link href="../css/mytheme.css"                   rel="stylesheet" />
+ <link href="../css/jquery.mobile.icons.css"       rel="stylesheet" />
+ <link href="../css/jquery.mobile.structure.css"   rel="stylesheet" />
+ <link href="../css/style.css"                     rel="stylesheet" />
+ <script src="../js/jquery.js"           ></script>
+ <script src="../js/jquery.mobile_fix.js"></script>
+ <script src="../js/jquery.mobile.js"    ></script>
+ <script src="../js/sub.js"              ></script>
+</head>
+<body>
+<div data-role="page">
+ <div role="main" class="ui-content">
+  <div id="hdr">
+   <span id='menux'>
+    <a id="home" title='back home!' href='../index.html'>
+       <img src='../img/home.webp'></a><br>
+    <a id="menubtn"
+       href="#menu" data-rel="popup" class="ui-btn ui-btn-inline">HERE'S THE DANG menu</a>
+   </span>
+   <img id="logosm" src="../img/top_logo.png">
+  </div>
+  <div id="bod">
+   <h1>midi for newbs - drum</h1>
+
+
+Remember that midi channel #10 on each device is reserved for drums.
+ MIDI assigns each drum a certain note number.
+ For example, when you send a note of octave=2/note=C on channel 10,
+ the sound module will hit an "Electric Kick Drum".<br>
+<br>
+Here's some of the notes mapped to Drums on channel 10
+ (and the wierd little 4 char codes PianoCheetah uses for em)<br>
+<pre>
+   2C  Kick\Kick BassDrum1Electric     1B  Kick\Kik2 BassDrum2Acoustic
+   2D  Snar\Snar Snare1Acoustic        2E  Snar\Snr2 Snare2Electric
+   2Gb HHat\HHCl HiHatClosed           2Ab HHat\HHPd HiHatPedal
+   2Bb HHat\HHOp HiHatOpen             3Eb Cymb\Ride CymbalRide1(Edge)
+   3B  Cymb\Rid2 CymbalRide2           3F  Cymb\RdBl CymbalRideBell
+   3Db Cymb\Cras CymbalCrash1          3A  Cymb\Cra2 CymbalCrash2
+   3G  Cymb\Spla CymbalSplash          3E  Cymb\Chin CymbalChinese
+   2F  Toms\TFlL TomFloorLo(1)         2G  Toms\TFlH TomFloorHi(2)
+   2A  Toms\TomL TomLo(3)              2B  Toms\TMdL TomMidLo(4)
+   3C  Toms\TMdH TomMidHi(5)           3D  Toms\TomH TomHi(6)
+   3Ab Misc\CowB Cowbell               3Gb Misc\Tamb Tambourine
+   5Ab Misc\TriM TriangleMute          5A  Misc\TriO TriangleOpen
+   5B  Misc\BelJ BellJingle(GS)        6C  Misc\BelT BellTree(GS)
+   1Eb Misc\HiQu HighQ(GS)             1G  Misc\Stik Sticks(GS)
+   2Db Misc\StkS SideStick             2Eb Misc\Clap HandClap
+   1E  Misc\Slap Slap(GS)              3Bb Misc\Vbra Vibraslap
+   5Bb Misc\Shak Shaker(GS)            6Db Misc\Cast Castanets(GS)
+   1F  Misc\ScPs ScratchPush(GS)       1Gb Misc\ScPl ScratchPull(GS)
+   1Ab Misc\MtSq MetronomeSquare(GS)   1A  Misc\MtCl MetronomeClick(GS)
+   1Bb Misc\MtBl MetronomeBell(GS)     4Db Latn\BonL BongoLo
+   4C  Latn\BonH BongoHi               4E  Latn\ConL CongaLo
+   4Eb Latn\ConO CongaHiOpen           4D  Latn\ConM CongaHiMute
+   4Gb Latn\TimL TimbaleLo             4F  Latn\TimH TimbaleHi
+   4Ab Latn\AgoL AgogoLo               4G  Latn\AgoH AgogoHi
+   4A  Latn\Caba Cabasa                4Bb Latn\Mara Maracas
+   5C  Latn\WhiL WhistleLong           4B  Latn\WhiS WhistleShort
+   5D  Latn\GuiL GuiroLong             5Db Latn\GuiS GuiroShort
+   5Eb Latn\Clav Claves                5F  Latn\BlkL WoodBlockLo
+   5E  Latn\BlkH WoodBlockHi           5G  Latn\CuiL CuicaLo
+   5Gb Latn\CuiH CuicaHi               6D  Latn\SurM SurdoMute(GS)
+   6Eb Latn\SurO SurdoOpen(GS)<br>
+</pre><br>
+<br>
+Some sound modules will let you send a program change on channel 10 to pick
+ different "drum sets".<br>
+<br>
+Some sound modules don't need a note off event for drums since they're
+ percussive and don't have a true duration (unless muted early, etc.)
+ Some do need the note off.<br>
+<br>
+The exact drum sound used will likely be different between sound modules...
+ Such is the way of midi...  It's tough to standardize sounds...  :(<br>
+<br>
+We'll get into that later in the sound section.<br>
+<br>
+
+
+<br><br><br><a id='next' class='ui-btn ui-btn-inline' href='control.html'>next: &nbsp;control</a>&nbsp;&nbsp;<a id='home' class='ui-btn ui-btn-inline' href='../index.html'>home</a>
+<br><br>
+
+
+ </div>
+ <div id="menu" data-role="popup">
+  <ul data-role="listview" data-icon="false">
+   <li><a href="../index.html" >...back home</a></li>
+   <li><a href="index.html"    >intro</a></li>
+   <li><a href="device.html"   >device</a></li>
+   <li><a href="channel.html"  >channel</a></li>
+   <li><a href="note.html"     >note</a></li>
+   <li><a href="drum.html"     >drum</a></li>
+   <li><a href="control.html"  >control</a></li>
+   <li><a href="sound.html"    >sound</a></li>
+   <li><a href="sysex.html"    >sysex</a></li>
+   <li><a href="sequencer.html">sequencer</a></li>
+  </ul>
+ </div>
+
+
+
+</div>
+</body>
+</html>

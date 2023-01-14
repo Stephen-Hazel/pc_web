@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+ <meta name="robots"      content="follow, all">
+ <meta name="keywords"    content="PianoCheetah, software, piano practice,">
+ <meta name="description" content=
+       "PianoCheetah - Add fun to your piano practice">
+
+ <title>PianoCheetah - midi for newbs - sysex</title>
+
+ <link href="https://PianoCheetah.app/favicon.ico" rel="Shortcut Icon" />
+ <link href="../css/mytheme.css"                   rel="stylesheet" />
+ <link href="../css/jquery.mobile.icons.css"       rel="stylesheet" />
+ <link href="../css/jquery.mobile.structure.css"   rel="stylesheet" />
+ <link href="../css/style.css"                     rel="stylesheet" />
+ <script src="../js/jquery.js"           ></script>
+ <script src="../js/jquery.mobile_fix.js"></script>
+ <script src="../js/jquery.mobile.js"    ></script>
+ <script src="../js/sub.js"              ></script>
+</head>
+<body>
+<div data-role="page">
+ <div role="main" class="ui-content">
+  <div id="hdr">
+   <span id='menux'>
+    <a id="home" title='back home!' href='../index.html'>
+       <img src='../img/home.webp'></a><br>
+    <a id="menubtn"
+       href="#menu" data-rel="popup" class="ui-btn ui-btn-inline">HERE'S THE DANG menu</a>
+   </span>
+   <img id="logosm" src="../img/top_logo.png">
+  </div>
+  <div id="bod">
+   <h1>midi for newbs - sysex</h1>
+
+
+There's one other type of event that can go across MIDI - the SYSEX event.<br>
+Sysex stands for "system exclusive" and is a garbage pile of
+ "anything else you'ld want to send across the wire".
+ None of the synth manufacturers can agree to send presets or
+ other non note/control info in a standard format.
+ So each manufacturer(system) has their own(exclusive) way of sending these
+ presets, banks, system data, etc, etc.<br>
+<br>
+I run away from system exclusive events.
+ I find the easiest way to back up each of my synths' settings
+ (usually by sysex)
+ And then try to use only notes and controls.<br>
+<br>
+Let's face it, we all succumb to gear lust.
+ Move from one piece of gear to the next and the sysex messages change.
+ Stay away from that stuff.<br>
+<br>
+Well, you may not be able to.
+ It may be the only way for you to do something you want to.
+ You'll need to find a programmer, or become one to deal with the stuff.
+ Even if you're an experienced programmer, sysex may make you scream.<br>
+<br>
+Ok, enough about sysex.  Try to forget it exists.<br>
+<br>
+
+
+<br><br><br><a id='next' class='ui-btn ui-btn-inline' href='sequencer.html'>next: &nbsp;sequencer</a>&nbsp;&nbsp;<a id='home' class='ui-btn ui-btn-inline' href='../index.html'>home</a>
+<br><br>
+
+
+ </div>
+ <div id="menu" data-role="popup">
+  <ul data-role="listview" data-icon="false">
+   <li><a href="../index.html" >...back home</a></li>
+   <li><a href="index.html"    >intro</a></li>
+   <li><a href="device.html"   >device</a></li>
+   <li><a href="channel.html"  >channel</a></li>
+   <li><a href="note.html"     >note</a></li>
+   <li><a href="drum.html"     >drum</a></li>
+   <li><a href="control.html"  >control</a></li>
+   <li><a href="sound.html"    >sound</a></li>
+   <li><a href="sysex.html"    >sysex</a></li>
+   <li><a href="sequencer.html">sequencer</a></li>
+  </ul>
+ </div>
+
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+Your first question is gonna be "which distro???"
+
+I'd recommend kubuntu.  I don't know you tho.
+Start with kubuntu and try others later.
+Starting turns out to be more important than picking the right distro.
+
+Also get a raspberry pi!  They're teeny and cheap and wonderful.
+
+Now ya gotta "burn an iso".  That's dumb linux speak for
+take a linux distro's os image file and write it to a usb stick.
+
+To install onto some old pc you have lying around.
+Don't dual boot.  windows and linux should never share a disk!
+Unless you like to be annoyed every time you boot your pc.
+Buy another pc.  They're cheap.
+
+
+balenaEtcher is a good app for writing the distro's .iso file to usb stick.
+<a target='_blank' href="https://www.balena.io/etcher/">here</a>
+
+For the raspberry pi, you'll want to use it's dedicated "imager".
+Stick with whatever it's default iso is.  Currently a 32 bit version.
+
+
+Then you fiddle with your pc's bios settings so
+your usb stick is found in the boot drive list.
+Your pc probably tells you which key to hold down on boot in order to 
+get into the bios settings.
+Usually F2, F1, Esc or Del.
+Then work your way to where you pick the drives to boot from and
+add your usb to it.
+
+Then reboot and wait.
+You'll usually see the "live os".
+The distro running ONLY for "try it" purposes - but not yet installed.
+
+There'll be an install icon to double click and it'll ask you the usual stuff:
+
+- replace the whole hard drive?  Yes!
+
+- machine and user name?  always name your machine penguin and
+  use your 2 initials for userid
+
+- put in your dang wifi password if ya ain't got an ethernet line
+  (like you should)
+
+
+Ok.  Go to the settings app and tweak away.
+Linux requires a lot of SUPER ANNOYING tweaking that you should write down for
+the next time you install the distro.
+
+Here's what I wrote down for 
+<a href='install_kubuntu.html'>kubuntu</a> and 
+<a href='install_raspi.html'>raspi</a>
+
+After that hump, you're ready to install your apps and setup your dev env.
+
+Oh and hardware wise, I like a NUC with an i7 and 2 hdmi ports or
+else video over usb3 capability.
+
+The raspi has 2 hdmi ports, but no video over usb3.
+
+I keep my data on a synology NAS.
+And backup to a usb3 drive.
+
+And all my network, usb, and (TONS o) midi devices hang off the usb3 hub.
+Then the hub is swapped between kubuntu and raspi.
+And i have 2 hdmi switches to swap between kubuntu and raspi
+so both get my portrait monitor (coding) and TV (browsing).
+
+
+Now which apps to use on linux...  Hmmm...

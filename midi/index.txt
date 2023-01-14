@@ -1,0 +1,61 @@
+<h3>And what the heck is MIDI???</h3>
+
+It's all the <b>notes</b> and <b>controls</b> that a piano keyboard can send to
+ a sound synthesizer over a wire.
+
+Most digital pianos have both a keyboard and a built in synthesizer.
+ There are also "controller keyboards" that will use a software synthesizer you
+ install on your computer.
+
+Anything you can DO on the keyboard, midi can do too.  (Well, can encode too.)
+
+When you pick a sound, a little teeny message goes across the midi cable.
+When you press a key down, a little teeny message goes across the midi cable.
+When you release a key, well, you get the idea...
+
+
+for notes, midi sends:
+ - which one?  Octave and note.
+
+ - down or up?  So really, there are 2 midi events per note.  One down.  One up.
+
+ - how hard pressed/released?  The "velocity" - a number from 1 to 127.  1=soft.
+   127=loud.
+
+ - which "channel" - a number that ties the note to a particular
+   sound and sound controls.  Similar to a mixer channel.  But for notes.
+
+
+for (sound) controls, midi sends:
+ - which one?  (HoldPedal, KeyboardPressure, ModWheel, ProgramChange, etc...)
+
+ - set it to what?  (usually a number from 0 to 127).
+
+ - which "channel" - again, ties this sound control to the notes playing on
+   that channel.
+
+
+Think of these little messages as notes being sent <b>from</b> a keyboard
+ <b>to</b> a synthesizer.
+
+They can also be stuffed into a midi file.  These usually have a .MID or .KAR
+ extension.  Things sent over a wire happen in real time.  In a midi file, these
+ events are stamped with the <i>exact</i> time they happen at.
+
+
+Midi cables let you seperate the keyboard controller from the sound module.
+ Kind of like the way audio cables let you have seperate stereo components.
+ So all your keyboards can go to one synthesizer or so one keyboard can
+ go to lots of synthesizers.  Also, computer programs can record and play back
+ the <i>exact</i> same notes.
+
+
+Now, if you're a computer programmer, you'll enjoy
+ <!-- https://home.roadrunner.com/~jgglatt/" -->
+ <a rel="x" href="http://midi.teragonaudio.com/"
+ >Jeff Glatt's site</a>.
+ Or maybe the standard midi site
+ <a rel="x" href="https://www.midi.org">midi.org</a>.
+
+
+We're going to just chat about the useful stuff, though.
