@@ -1,0 +1,47 @@
+ <img style="float: right;" src="go.png">
+SHazWare is ... <b>S</b>teve <b>HAZ</b>el's soft<b>WARE</b>
+Some file utilities I wrote for me.
+Just thought you might wanna try em, too...
+
+<h3>kubuntu and raspi</h3>
+<a href="https://github.com/Stephen-Hazel/shazware">source on github</a>
+
+
+<h3>old windows version</h3>
+<a href="SETUPSHAZWARE.exe">
+ <img src="img/download.gif">download SETUPSHAZWARE.exe</a>
+
+ - FindTxt - find a text string in all the files of a dir
+
+ - Flatten - flatten all the subdirs in a dir
+
+ - NEd - Nifty text EDitor.
+   I write all my code in it, but it's limited to 80 cols
+
+ - Recent - list files most recently touched in a dir
+
+ - RenEm - rename all the files in a dir at once
+
+ - UnDup - kill off duplicate files in a dir
+
+ - WebGet - download all files of a webpage at once
+
+Run...
+ - WebGet from the start menu.
+
+ - NEd by right clicking files in windows explorer
+
+ - everything else by right clicking a directory in windows explorer
+
+<h3>Installing</h3>
+download and run <a href="SETUPSHAZWARE.exe">SETUPSHAZWARE.exe</a> which will...
+
+ - ask you for the install dir.  (just use the default)
+
+ - install all the stuff
+
+After running it, you can delete SETUPSHAZWARE.exe.
+Problems?  email stephen.hazel@gmail.com
+
+<h3>UnInstalling</h3>
+Control Panel - Programs And Features - select SHazWare - click Uninstall.
