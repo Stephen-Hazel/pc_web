@@ -18,12 +18,16 @@ install:<br>
 remove:<br>
  &nbsp; sudo dpkg -P pcheetah
 
-<hr>
+Hey!  Don't be a stranger - if you got questions I'm here ta answer em.
+
+
+<h3>shazware</h3>
 
 I've also got some codin' utilities that other developers/nerds may like:
 <a href="https://github.com/Stephen-Hazel/shazware">shazware for kubuntu and raspi on github</a>
 
-<hr>
+
+<h3>old windows stuff</h3>
 
 Here are some old windows SETUP.exes I still have.
 <a href="SETUP_PIANOCHEETAH.exe">SETUP_PIANOCHEETAH.exe</a>
