@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+ <meta name="robots"      content="follow, all">
+ <meta name="keywords"    content="PianoCheetah, software, piano practice,">
+ <meta name="description" content=
+       "PianoCheetah - Add fun to your piano practice">
+
+ <title>PianoCheetah - docs fer PianoCheetah - what's this pianocheetah directory got?</title>
+
+ <link href="https://PianoCheetah.app/favicon.ico" rel="Shortcut Icon" />
+ <link href="../css/mytheme.css"                   rel="stylesheet" />
+ <link href="../css/jquery.mobile.icons.css"       rel="stylesheet" />
+ <link href="../css/jquery.mobile.structure.css"   rel="stylesheet" />
+ <link href="../css/style.css"                     rel="stylesheet" />
+ <script src="../js/jquery.js"           ></script>
+ <script src="../js/jquery.mobile_fix.js"></script>
+ <script src="../js/jquery.mobile.js"    ></script>
+ <script src="../js/sub.js"              ></script>
+</head>
+<body>
+<div data-role="page">
+ <div role="main" class="ui-content">
+  <div id="hdr">
+   <span id='menux'>
+    <a id="home" title='back home!' href='../index.html'>
+       <img src='../img/home.webp'></a><br>
+    <a id="menubtn"
+       href="#menu" data-rel="popup" class="ui-btn ui-btn-inline">HERE'S THE DANG menu</a>
+   </span>
+   <img id="logosm" src="../img/top_logo.png">
+  </div>
+  <div id="bod">
+   <h1>docs fer PianoCheetah - what's this pianocheetah directory got?</h1>
+
+
+pianocheetah main directory has...
+<div class='bul'>YOUR songs - the ones you're practicing and did.<br>
+</div>
+<div class='bul'>Parts of songs, midi device configuraton, and other stuffff.<br>
+</div><br>
+<br>
+Don't keep every midi file in the universe here!  <br>
+Keep those in a different directory to be searched.<br>
+PianoCheetah lists this one every time it runs.<br>
+<br>
+<br>
+<h3>1_learning</h3><br>
+songs you're learning right now (daily-ish)<br>
+<br>
+<br>
+<h3>2_repertoire</h3><br>
+songs you want to keep in your fingers (weekly-ish) on rotation<br>
+<br>
+<br>
+<h3>3_done</h3><br>
+songs you're done with but want to keep because of the loops and fingering you've setup.  So you can pick them back up another day<br>
+<br>
+<br>
+<h3>4_queue</h3><br>
+staging area for new songs you'll get to as you have time.<br>
+eventually they'll be moved to 1/2/3 above...<br>
+<br>
+<br>
+<h3>clip</h3><br>
+parts of tracks that are weaved into songs<br>
+drum clips, bass patterns, arpeggios, chord changes, styles, etc<br>
+<br>
+<br>
+<h3>device</h3><br>
+has your midi hardware configuration and all of syn's samples<br>
+<br>
+<br>
+<h3>midi_import</h3><br>
+If you have a whole bunch of midi files to convert to .song format,
+ put them here.<br>
+When PCheetah starts, they'll all be converted and moved to 4_queue.<br>
+<br>
+directory structure is important:<br>
+genre/groupArtist/title<br>
+If groupArtist is ^ then the first space, -, or _ will be used to split group and title<br>
+If groupArtist is @ then group is split off the end of the filename.<br>
+Use _ for unknown groupArtist<br>
+Genre should almost always be _Pop but categorize as you like.
+ <br>
+TODO explain better :/<br>
+<br>
+
+
+<a id='home' class='ui-btn ui-btn-inline' href='../index.html'>home</a>
+<br><br>
+
+
+ </div>
+ <div id="menu" data-role="popup">
+  <ul data-role="listview" data-icon="false">
+   <li><a href="index.html"       >whatta i gotta know?</a></li>
+   <li><a href="pianocheetah.html">pianocheetah directory</a></li>
+  </ul>
+ </div>
+
+
+
+</div>
+</body>
+</html>
