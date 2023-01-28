@@ -16,7 +16,7 @@ function LstDir ($p)
 }
 
 
-   $TOP = "/home/sh/_/web/pc_web";
+   $TOP = "/home/sh/_/web/pc";
    $Hdr = Get ("$TOP/_/hdr.html");
    $Trl = Get ("$TOP/_/trl.html");
 

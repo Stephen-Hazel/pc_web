@@ -30,38 +30,26 @@ If the song turned out just too hard, throw it back at the end of the queue.
 
 
 
-<h3>Where do I find songs?</h3>
-Ok, you probably want to play pop and find free songs to play, right?
- Well, you need to pay the composer of the songs you learn.
-
-Now, you're a big boy and I'm not going to lecture you.
- But without a composer you'ld have no song to practice.
- Pay them.  They deserve it.
-
-
-
 <h3>Song Arrangement</h3>
-Which version of the song should you buy?
+Which version of the song should you get?
 
 Sheet music is almost never written by the pop artist.
  It's written by a transcriptionist / arranger.
- They <b>can</b> get things a little bit wrong / make mistakes.
+ They usually want you to be able to play it.
+ So they'll usually rearrange notes to not include all parts of every band member.
+ So they end up sounding, well, like solo piano.
+ Look for midi files with all the tracks of the song.
+ You'll just play the piano part.  But it's best to have the rest of the parts too!
+
  Artists can also <b>change</b> the way they play a piece.
-
-Music for "piano/guitar/voice" often does not have the complete piano part.
- If the music is labeled EASY, then it is unlikely to be anywhere near
- authentic.
-
-A song needs to be arranged for the instruments that'll play it.
 
 
 
 <h3>Vocals?</h3>
-Real music often lets the singer carry the melody.
- This means the melody isn't in the piano part.  Are you going to sing it?
+Most music has the lead vocalist singing the melody.
+ This means the melody isn't in the piano part.
 
- - Some sheet music will leave out the melody.
-   What if you don't sing?  A missing melody is a bad thing.
+ - What if you don't sing?  A missing melody is a bad thing.
 
  - Some sheet music mixes it into the piano part.
    This makes the song sound <b>very</b> different from the original.
@@ -69,7 +57,7 @@ Real music often lets the singer carry the melody.
 
 Will you sing?
  If so, you'll want an arrangement with no melody in the piano notation.
- If there are melody notes in there, you'll have to take them out - messy.
+ If there are melody notes in there, you'll have to take them out.
 
 If you don't sing, you'll want the melody "jammed in there".
  This will make the song sound <b>very</b> different from the original.
@@ -77,23 +65,7 @@ If you don't sing, you'll want the melody "jammed in there".
 
 
 <h3>Stealing</h3>
-Unfortunately, the majority of legal song distributors will not let you preview
- a song's arrangement.
-
-One alternative is stealing... :(
- - install uTorrent
-
- - hit ThePirateBay  (google it)
-
- - put "midi" in the search bar and you'll see collections of 5000 midis
-
- - download them and search for your favorite song
-
- - check every arrangement for superiority
-
-So Steve, how do you relieve the guilt?
-
-Well, when I find myself practicing a new song, I buy the song from whoever
- looks the most reputable and is selling SOME arrangement of it.
-
-If the police come knocking, don't blame <b>me</b>, man.
+Ok maybe a tiny lecture.
+ Copying is the most sincere form of flattery.
+ If you ask me, stealing is ok.
+ End of lecture.

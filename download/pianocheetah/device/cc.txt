@@ -1,0 +1,37 @@
+Tmpo     x 120 y Tmpo  tempo (scaled unsigned)        (non midi/mapped)
+TSig     x 260 y TSig  time signature 4/4=>4|2<<7=260 (non midi/mapped)
+KSig     x 0   y KSig  key signature C(0b,Maj)=0      (non midi/mapped)
+Prog     x 0   y Prog  set track's sound on it's dev/chn
+MTun     s 64  y us3   master transpose/tune
+Tune     s 64  y rp4   track transpose
+PBnR     u 2   y rp0   pitchbend range
+PBnd     s 64  y PBnd  pitchbend tuning
+MVol     u 127 y us0   master volume
+Vol      u 100 y cc7   track overall volume
+Expr     u 127 y cc11  track volume adjustment
+MBal     s 64  y us1   master balance
+Pan      s 64  y cc10  track pan position
+Bal      s 64  y cc8   track pan adjustment
+Hold     o 0   y cc64  sustain/damper pedal
+Soft     o 0   y cc67  soft pedal
+Sust     o 0   y cc66  sustenuto pedal
+Lega     o 0   y cc68  legato pedal
+Rvrb     u 0   n cc91  reverb fx amount
+Chor     u 0   n cc93  chorus fx amount
+Portamto u 0   n cc65  portamento on/off
+PrtTime  u 0   n cc5   portamento time hi
+PrtTimeL u 0   n cc37  portamento time lo
+PrtNote  u 0   n cc84  portamento note
+SnOff    u 0   n cc120 sounds off
+CtRst    u 0   n cc121 control reset
+NtOff    u 0   n cc123 notes off
+LocCtrl  u 0   n cc122
+OmniOff  u 0   n cc124
+OmniOn   u 0   n cc125
+Mono     u 0   n cc126
+Poly     u 0   n cc127
+Prss     u 0   y Prss  (usually mapped)
+Mod      u 0   y cc1   (usually mapped)
+Brth     u 0   n cc2   (usually mapped)
+Pedl     u 0   n cc4   (usually mapped)
+Hld2     o 0   y cc69  sustain/damper pedal 2 (usually mapped)
