@@ -1,4 +1,4 @@
-# pc_web
+# pc
 pianocheetah website
 
 see https://pianocheetah.app

@@ -20,16 +20,7 @@ And ya cd to whereever it went (probably your downloads folder) and go:
  - remove: &nbsp; sudo dpkg -P pcheetah
 
 Hey!  Don't be a stranger - if you got questions I'm here ta answer em.
+                                               stephen.hazel@gmail.com
 
 
-<h3>old windows stuff</h3>
-Here are some old windows SETUP.exes I still have.
-<a href="SETUP_PIANOCHEETAH.exe">
- <img src="img/download.gif">SETUP_PIANOCHEETAH.exe</a>
-You're on your own cuz I am dooone with windows.
-I've fixed some bugs on Linux.  They're all still there on Windows :)
-
-
-<h3>shazware</h3>
-I've also got some codin' utilities that other developers/nerds may like:
-
+I've also got some utilities for developers/nerds:
