@@ -35,16 +35,13 @@ drum clips, bass patterns, arpeggios, chord changes, styles, etc
 has your midi hardware configuration and all of syn's samples
 
 
-<h3>midi_import</h3>
-If you have a whole bunch of midi files to convert to .song format,
- put them here.
-When PCheetah starts, they'll all be converted and moved to 4_queue.
+<h3>midi_import - How do I get new midi files in this thing??</h3>
+pianocheetah looks for midi files here when it boots.
 
-directory structure is important:
-genre/groupArtist/title
-If groupArtist is ^ then the first space, -, or _ will be used to split group and title
-If groupArtist is @ then group is split off the end of the filename.
-Use _ for unknown groupArtist
-Genre should almost always be _Pop but categorize as you like.
- 
-TODO explain better :/
+ - it will also re-convert .mid files to .song files if there's a 
+   .../pianocheetah/4_queue/redo.txt file
+
+ - any non midi files are moved to a dir called midi_junk
+   (like .txt files or .pdf or whatever else)
+
+ - directory structure will be kept when moving to 4_queue

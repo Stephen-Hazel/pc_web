@@ -1,3 +1,22 @@
 the stuff ta lookup when you're all "how did pianocheetah do that again??"
 
-TODO morez :/
+Still super beta !!  I work on it every week though.
+
+
+OK!  A blurb about PianoCheetah's main purpose:
+
+ - piano and drum song practice.
+
+ - show notes in NICE pianoroll format.  Better than standard notation.  Not jokin'
+
+ - you practice a song.  Or just a track and the rest syncs to your playing.
+
+ - or you play a "super easy to hit" version of the song with way less notes. 
+   BUT however hard you hit the easy note is how the song's "feel" will go.
+
+ - NOT a daw!! - there are enough of those.  we're not here to mix down.  ...yet
+
+ - getting a song into your head and fingers is what we're about here.  
+
+
+Ok.  Let me get back to coding.  I promise to explain it better.  Maybe with videos.

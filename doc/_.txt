@@ -1,4 +1,4 @@
 # htmlfilename [title]
-.docs fer PianoCheetah
+.docs
 index what do i gotta know?
 pianocheetah what's this pianocheetah directory got?

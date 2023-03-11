@@ -8,7 +8,7 @@
  <meta name="description" content=
        "PianoCheetah - Add fun to your piano practice">
 
- <title>PianoCheetah - docs fer PianoCheetah - what's this pianocheetah directory got?</title>
+ <title>PianoCheetah - docs - what's this pianocheetah directory got?</title>
 
  <link href="https://PianoCheetah.app/favicon.ico" rel="Shortcut Icon" />
  <link href="../css/mytheme.css"                   rel="stylesheet" />
@@ -33,7 +33,7 @@
    <img id="logosm" src="../img/top_logo.png">
   </div>
   <div id="bod">
-   <h1>docs fer PianoCheetah - what's this pianocheetah directory got?</h1>
+   <h1>docs - what's this pianocheetah directory got?</h1>
 
 
 pianocheetah main directory has...
@@ -73,20 +73,17 @@ drum clips, bass patterns, arpeggios, chord changes, styles, etc<br>
 has your midi hardware configuration and all of syn's samples<br>
 <br>
 <br>
-<h3>midi_import</h3><br>
-If you have a whole bunch of midi files to convert to .song format,
- put them here.<br>
-When PCheetah starts, they'll all be converted and moved to 4_queue.<br>
-<br>
-directory structure is important:<br>
-genre/groupArtist/title<br>
-If groupArtist is ^ then the first space, -, or _ will be used to split group and title<br>
-If groupArtist is @ then group is split off the end of the filename.<br>
-Use _ for unknown groupArtist<br>
-Genre should almost always be _Pop but categorize as you like.
- <br>
-TODO explain better :/<br>
-<br>
+<h3>midi_import - How do I get new midi files in this thing??</h3><br>
+pianocheetah looks for midi files here when it boots.<br>
+
+<div class='bul'>it will also re-convert .mid files to .song files if there's a 
+   .../pianocheetah/4_queue/redo.txt file<br>
+</div>
+<div class='bul'>any non midi files are moved to a dir called midi_junk
+   (like .txt files or .pdf or whatever else)<br>
+</div>
+<div class='bul'>directory structure will be kept when moving to 4_queue<br>
+</div><br>
 
 
 <a id='home' class='ui-btn ui-btn-inline' href='../index.html'>home</a>
@@ -97,7 +94,7 @@ TODO explain better :/<br>
  <div id="menu" data-role="popup">
   <ul data-role="listview" data-icon="false">
    <li><a href="index.html"       >whatta i gotta know?</a></li>
-   <li><a href="pianocheetah.html">pianocheetah directory</a></li>
+   <li><a href="pianocheetah.html">pianocheetah directory</a></li>  
   </ul>
  </div>
 
